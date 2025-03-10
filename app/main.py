@@ -9,6 +9,8 @@ app = FastAPI()
 
 # Rota de Clientes
 app.include_router(registro_cliente.router, tags=["Clientes"])
+
+# Rota de Login
 app.include_router(user_auth.router, tags=["Autenticação"])
 
 # Rotas de Produtos
